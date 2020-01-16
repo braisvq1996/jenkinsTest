@@ -15,7 +15,7 @@ pipeline {
                 timeout(time: 3, unit: 'MINUTES') {
                     retry(5) {
                         sh 'python --version'
-                        sh 'yum install -y python3'
+                        sh 'sudo yum install -y python3'
                         sh 'python --version'
                         
                         sh 'echo "Hello World"'
