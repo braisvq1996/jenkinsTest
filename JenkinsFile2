@@ -17,6 +17,7 @@ pipeline {
             steps {
                 echo 'Testing'
                 sh 'chmod 777 JenkinsFile'
+                sh 'ls -al'
             }
         }
         stage('Sanity check') {
