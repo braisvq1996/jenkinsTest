@@ -8,8 +8,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                'pwd'
-                sh 'wget 'https://github.com/braisvq1996/jenkinsTest.git''
+                sh 'pwd'
+                sh 'wget "https://github.com/braisvq1996/jenkinsTest.git"'
                 sh 'ls -al'
             }
         }
