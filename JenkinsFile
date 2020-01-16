@@ -2,7 +2,7 @@
 pipeline {
     agent { 
         docker { 
-            image 'python:3.5.1' 
+            image 'centos:7 
                 } 
           }
     environment {
@@ -15,6 +15,9 @@ pipeline {
                 timeout(time: 3, unit: 'MINUTES') {
                     retry(5) {
                         sh 'python --version'
+                        sh 'sudo yum install python2'
+                        sh 'python --version'
+                        
                         sh 'echo "Hello World"'
                         sh '''
                             echo "Multiline shell steps works too"
