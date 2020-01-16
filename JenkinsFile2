@@ -8,11 +8,15 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
+                pwd
+                wget 'https://github.com/braisvq1996/jenkinsTest/JenkinsFile.git'
+                ls -al
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing'
+                chmod 777 JenkinsFile
             }
         }
         stage('Sanity check') {
@@ -23,6 +27,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying'
+                exit
             }
         }
     }
