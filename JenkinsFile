@@ -21,7 +21,7 @@ pipeline {
                             echo "Multiline shell steps works too"
                             ls -lah
                         '''
-                        sh 'curl 0.0.0.0'
+                        sh 'ls -al /'
                         
                         sh 'echo "Database engine is ${DB_ENGINE}"'
                         sh 'echo "DISABLE_AUTH is ${DISABLE_AUTH}"'
