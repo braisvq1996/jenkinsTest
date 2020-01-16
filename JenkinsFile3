@@ -5,7 +5,6 @@ node {
     
     if(i==0)
     {
-      git "<a href="https://github.com/braisvq1996/jenkinsTest/JenkinsFile.git">"
       echo 'Runnig on Stage #0'        
     }
     else
