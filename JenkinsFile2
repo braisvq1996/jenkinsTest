@@ -8,9 +8,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                pwd
-                wget 'https://github.com/braisvq1996/jenkinsTest/JenkinsFile.git'
-                ls -al
+                'pwd'
+                sh 'wget 'https://github.com/braisvq1996/jenkinsTest/JenkinsFile.git''
+                sh 'ls -al'
             }
         }
         stage('Test') {
