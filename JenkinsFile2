@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo 'Building'
                 'pwd'
-                sh 'wget 'https://github.com/braisvq1996/jenkinsTest/JenkinsFile.git''
+                sh 'wget 'https://github.com/braisvq1996/jenkinsTest.git''
                 sh 'ls -al'
             }
         }
